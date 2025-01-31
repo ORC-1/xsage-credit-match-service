@@ -1,0 +1,23 @@
+2025-01-31 15:45:25.511  INFO 74768 --- [main] c.x.x.XsageCreditMatchServiceApplication : Starting XsageCreditMatchServiceApplication using Java 17.0.7 on MacBook-Pro-4.local with PID 74768 (/Users/user/Documents/ExchangeApp/CreditMatcher/target/classes started by user in /Users/user/Documents/ExchangeApp/CreditMatcher)
+2025-01-31 15:45:25.517  INFO 74768 --- [main] c.x.x.XsageCreditMatchServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-01-31 15:45:25.517 DEBUG 74768 --- [main] o.s.boot.SpringApplication               : Loading source class com.xsage.xsagecreditmatchservice.XsageCreditMatchServiceApplication
+2025-01-31 15:45:25.603 DEBUG 74768 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d9c13b5
+2025-01-31 15:45:26.502  INFO 74768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-31 15:45:26.511 DEBUG 74768 --- [main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.xsage.xsagecreditmatchservice'. Automatic @Repository and @Entity scanning is enabled.
+2025-01-31 15:45:26.564  INFO 74768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2025-01-31 15:45:26.994 DEBUG 74768 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /Users/user/.m2/repository/org/springframework/boot/spring-boot/2.7.4/spring-boot-2.7.4.jar
+2025-01-31 15:45:26.995 DEBUG 74768 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /Users/user/.m2/repository/org/springframework/boot/spring-boot/2.7.4/spring-boot-2.7.4.jar
+2025-01-31 15:45:26.995 DEBUG 74768 --- [main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2025-01-31 15:45:27.006  INFO 74768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-01-31 15:45:27.014  INFO 74768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-31 15:45:27.014  INFO 74768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2025-01-31 15:45:27.136  INFO 74768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-31 15:45:27.139 DEBUG 74768 --- [main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2025-01-31 15:45:27.140  INFO 74768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1537 ms
+2025-01-31 15:45:27.331 DEBUG 74768 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2025-01-31 15:45:27.332 DEBUG 74768 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2025-01-31 15:45:27.344 DEBUG 74768 --- [main] o.s.b.a.m.w.servlet.WebMvcMetricsFilter  : Filter 'webMvcMetricsFilter' configured for use
+2025-01-31 15:45:27.344 DEBUG 74768 --- [main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2025-01-31 15:45:27.344 DEBUG 74768 --- [main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2025-01-31 15:45:27.345 DEBUG 74768 --- [main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2025-01-31 15:45:27.432  INFO 74768 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
