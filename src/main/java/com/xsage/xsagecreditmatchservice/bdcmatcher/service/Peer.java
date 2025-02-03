@@ -1,7 +1,7 @@
 package com.xsage.xsagecreditmatchservice.bdcmatcher.service;
 
-import com.xsage.xsagecreditmatchservice.shared.util.SupportedCurrency;
+import com.xsage.xsagecreditmatchservice.shared.util.ValidCurrencyPair;
 
 import java.math.BigDecimal;
 
-record Peer(String name, Location location, BigDecimal balance, SupportedCurrency currency) {}
+public record Peer(String name, Location location, BigDecimal balance, ValidCurrencyPair currency) {}

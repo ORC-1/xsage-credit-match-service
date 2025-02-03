@@ -29,4 +29,12 @@ public class MerchantBankInfo {
 
     @NotNull
     private String bankAccountCurrencyDenomination;
+
+    @NotNull
+    private Double balance;
+
+    public MerchantBankInfo(Merchant merchant, double balance) {
+        this.merchantId = merchant;
+        this.balance = balance;
+    }
 }

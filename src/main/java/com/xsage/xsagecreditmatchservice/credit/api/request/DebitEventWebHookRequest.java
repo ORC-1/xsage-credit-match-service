@@ -4,6 +4,8 @@ import lombok.Data;
 import javax.annotation.Nullable;
 
 @Data
+@SuppressWarnings("checkstyle:MemberName") //Member Name not conforming to
+// Standard Formatting to make it easier to use in request response class conversion Reflection
 public class DebitEventWebHookRequest {
     public String Type;
     public String MessageId;

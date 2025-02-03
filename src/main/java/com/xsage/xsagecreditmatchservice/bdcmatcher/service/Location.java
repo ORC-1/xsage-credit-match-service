@@ -9,15 +9,15 @@ public class Location {
         this.longitude = longitude;
     }
 
-    public boolean isWithinRange(Location other, double km) {
-        final int R = 6371; // Earth radius in km
-        double latDistance = Math.toRadians(other.latitude - this.latitude);
-        double lonDistance = Math.toRadians(other.longitude - this.longitude);
-        double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2) +
-                   Math.cos(Math.toRadians(this.latitude)) * Math.cos(Math.toRadians(other.latitude)) *
+    public boolean isWithinRange(Location userLocation, double km) {
+        final int earthRadius = 6371; // Earth radius in km
+        double latDistance = Math.toRadians(userLocation.latitude - this.latitude);
+        double lonDistance = Math.toRadians(userLocation.longitude - this.longitude);
+        double haversineComponent = Math.sin(latDistance / 2) * Math.sin(latDistance / 2) +
+                   Math.cos(Math.toRadians(this.latitude)) * Math.cos(Math.toRadians(userLocation.latitude)) *
                    Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        double distance = R * c; // convert to km
+        double centralAngle = 2 * Math.atan2(Math.sqrt(haversineComponent), Math.sqrt(1 - haversineComponent));
+        double distance = earthRadius * centralAngle; // convert to km
         return distance <= km;
     }
 }

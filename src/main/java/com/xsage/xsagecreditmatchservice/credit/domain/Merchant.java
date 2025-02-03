@@ -2,6 +2,7 @@ package com.xsage.xsagecreditmatchservice.credit.domain;
 
 import com.xsage.xsagecreditmatchservice.shared.util.PenaltyWeight;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -14,6 +15,7 @@ import java.util.Date;
 @Setter
 @Getter
 @ToString
+@NoArgsConstructor
 public class Merchant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,8 +48,15 @@ public class Merchant {
     @Nullable
 //    TODO: write EOD method that calculates this based on:
 //     1. get every customer this merchant interacted with
-//     2. get the how many times the customer used the system after using the merchant from the date they interacted with the merchant
-//     3. divide by 100
+//     2. get how many times the customer used the system after using the merchant from the date they interacted with the merchant
+//     3. Apply Simple Linear Scaling (Using Two Points)
 //     4. Decide minimum score of which a merchant hits, he's penalized
     private Double customerRepeatRate;
+
+    public Merchant(String merchant1, double latitude, double longitude, PenaltyWeight penaltyWeight) {
+        this.userId = merchant1;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.penalty = penaltyWeight;
+    }
 }

@@ -18,7 +18,7 @@ public class TransactionFulfillment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-//    TODO: map to merchant
+    //TODO: map to merchant
     private Long merchantId;
 
     @CreationTimestamp

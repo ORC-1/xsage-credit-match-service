@@ -20,7 +20,6 @@ public class CreditController {
     static final String PATH = "api/merchant/credit/";
     static Gson gson = new Gson();
 
-
     @ResponseStatus(HttpStatus.OK)
     @PostMapping(path = "debiteventwebhook", consumes = MediaType.TEXT_PLAIN_VALUE)
     public void DebitEventWebHook(@RequestBody String request) {
