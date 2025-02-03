@@ -44,7 +44,7 @@ For the evaluation copy, tests have only been written for the core class BureauD
 This project includes tests only for the core class: BureauDeChangeImpl. Additional test coverage is encouraged for production use.
 
 ## Disclaimer
-🚨 **This project is for demonstration purposes only. It is not intended for production deployment without significant security, compliance, and performance enhancements.**
+🚨 **This project is for demonstration purposes only. It is not intended for production deployment without complimenting services.**
 
 ## Get in Touch
 Interested in deploying a fully operational peer-to-peer fiat exchange microservice? Contact **rolandazim@gmail.com** to discuss implementation and custom solutions.
